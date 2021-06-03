@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.a101dfoodrescue">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.101DFoodRescue">
+        <activity android:name=".PaymentDetails"></activity>
+        <activity android:name=".MyCart" />
+        <activity android:name=".MyList" />
+        <activity android:name=".newFoodItem" />
+        <activity android:name=".HomeView" />
+        <activity android:name=".ChangePasswordActivity" />
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.google.android.gms.wallet.api.enabled"
+                android:value="true" />
+        </activity>
+    </application>
+
+</manifest>
